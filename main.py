@@ -11,6 +11,9 @@ info = st.container()
 
 file_uploads = st.container()
 
+with st.sidebar:
+    st.title("Tictag.")
+
 with welcome:
     st.title("Tictag - [TSC.ai]")
     st.text("In this Project we will be convering the conversion of tsc.ai input files into our required output files")
@@ -61,7 +64,6 @@ with file_uploads:
                 
                 reference_id =  item["ref_id"]
                 # language = item['language']
-
                 try:
                     text = item["text"]
                 except:
