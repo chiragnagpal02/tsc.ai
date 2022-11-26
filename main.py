@@ -1,10 +1,9 @@
 import streamlit as st
-import os
 import json
 from io import StringIO
 import pandas as pd
 import googletrans
-import time
+
 
 welcome = st.container()
 info = st.container()
