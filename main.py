@@ -15,7 +15,7 @@ with st.sidebar:
 
 with welcome:
     st.title("Tictag - [TSC.ai]")
-    st.text("In this Project we will be convering the conversion of tsc.ai input files into our required output files")
+    st.text("In this Project we will be convering the\nconversion of tsc.ai input files into our required output files")
 
 
 with info:
