@@ -87,6 +87,7 @@ with file_uploads:
 
         df1 = pd.DataFrame(final_list_portuguese)
         vari = df1.to_csv(encoding="utf-8", header=False, index=False)
+        df1.rename(columns = {0:'Reference ID', 1:'Sentences'}, inplace = True)
         st.write(df1)
         st.download_button('Download Language CSV', data=vari, mime='text/csv')
 
