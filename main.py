@@ -154,6 +154,7 @@ with file_uploads:
         st.write(f"Done! Completed Translations for {len(one_column_csv)} items!")
 
         df1 = pd.DataFrame(english_translations_spanish_2500_3000)
+        df1.rename(columns = {0:'Reference ID', 1:'English Sentences'}, inplace = True)
         vari = df1.to_csv(encoding="utf-8", header=False, index=False)
         st.write(df1)
         st.download_button('Download English CSV', data=vari, mime='text/csv')
